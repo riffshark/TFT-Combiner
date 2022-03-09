@@ -259,6 +259,75 @@ let ITEM_DESCRIPTION = new Map([
 
 ]);
 
+let ITEM_DESCRIPTION_FULL = new Map([
+    [ITEMS.Arcangel, "During combat, the holder gains 25 Ability Power every 5 seconds"],
+    [ITEMS.Banshees_Claw, "When combat begins, the holder and all allies within 1 hex in the same row gain a shield that blocks the damage and effects of the first enemy Ability, up to 600 damage"],
+    [ITEMS.BF, "BF"],
+    [ITEMS.Blue_Buff, "The holder gains 50 Mana (including components). After casting their Ability, the holder gains 20 mana.\n[Unique - only 1 per champion]"],
+    [ITEMS.Bow, "Bow"],
+    [ITEMS.Bramblewest, "Grants 70 bonus Armor (including components). Negates 75% bonus damage from incoming critical strikes. On being hit by an attack, deal 75/100/150★ magic damage to all nearby enemies (once every 2.5 seconds)"],
+    [ITEMS.BT, "Physical damage heals the holder for 33% of the damage dealt.\nUpon falling below 40% Health, the holder gains a 30% max Health shield that lasts up to 5 seconds."],
+    [ITEMS.Chain_West, "Chain_West"],
+    [ITEMS.Chalice, "When combat begins, the holder and all allies within 1 hex in the same row gain 30 Ability Power for the rest of combat"],
+    [ITEMS.Challanger_Emblem, "The holder gains the Challanger trait.\n[Unique - Only One Per Champion]"],
+    [ITEMS.Deathblade, "The holder gains 50/75/100★ bonus Attack Damage (including components)."],
+    [ITEMS.Dragons_Claw, "Grants 200 bonus Magic Resist (including components). On being hit by magic or true damage from an Ability, launch a fireball at the Ability's caster that deals magic damage equal to 18% of their max Health (0.5 second cooldown)"],
+    [ITEMS.Emblem_Arcanist, "The holder gains the Arcanist trait.\n[Unique - Only One Per Champion]"],
+    [ITEMS.Emblem_Assassin, "The holder gains the Assassin trait.\n[Unique - Only One Per Champion]"],
+    [ITEMS.Emblem_Bruiser, "The holder gains the Bruiser trait.\n[Unique - Only One Per Champion]"],
+    [ITEMS.Emblem_Chemtech, "The holder gains the Chemtech trait.\n[Unique - Only One Per Champion]"],
+    [ITEMS.Emblem_Clockwork, "The holder gains the Clockwork trait.\n[Unique - Only One Per Champion]"],
+    [ITEMS.Emblem_Debonair, "The holder gains the Debonair trait.\n[Unique - Only One Per Champion]"],
+    [ITEMS.Emblem_Enforcer, "The holder gains the Enforcer trait.\n[Unique - Only One Per Champion]"],
+    [ITEMS.Emblem_Hextech, "The holder gains the Hextech trait.\n[Unique - Only One Per Champion]"],
+    [ITEMS.Emblem_Innovator, "The holder gains the Innovator trait.\n[Unique - Only One Per Champion]"],
+    [ITEMS.Emblem_Mercenery, "The holder gains the Mercenary trait.\n[Unique - Only One Per Champion]"],
+    [ITEMS.Emblem_Mutant, "The holder gains the Mutant trait.\n[Unique - Only One Per Champion]"],
+    [ITEMS.Emblem_Protector, "The holder gains the Protector trait.\n[Unique - Only One Per Champion]"],
+    [ITEMS.Emblem_Scholar, "The holder gains the Scholar trait.\n[Unique - Only One Per Champion]"],
+    [ITEMS.Emblem_Scrap, "The holder gains the Scrap trait.\n[Unique - Only One Per Champion]"],
+    [ITEMS.Emblem_Sniper, "The holder gains the Sniper trait.\n[Unique - Only One Per Champion]"],
+    [ITEMS.Emblem_Socialite, "The holder gains the Socialite trait.\n[Unique - Only One Per Champion]"],
+    [ITEMS.Emblem_Striker, "The holder gains the Striker trait.\n[Unique - Only One Per Champion]"],
+    [ITEMS.Frozen_Heart, "Reduces the Attack Speed of enemies within 2 hexes by 35%.\n[Unique - only 1 per champion]"],
+    [ITEMS.GA, "GA"],
+    [ITEMS.Gargoyle_Stoneplate, "The holder gains 18 Armor and 18 Magic Resist for each enemy targeting them"],
+    [ITEMS.Giant_Slayer, "The holder's Abilities and attacks do 20% bonus damage. If the target has more than 1600 maximum Health, the bonus increases to 60%"],
+    [ITEMS.Giants_Belt, "Giants_Belt"],
+    [ITEMS.Hand_Of_Justice, "The holder gains both of the following:\n• +10 Attack Damage and +10 Ability Power.\n• Attacks and Abilities heal for 10% of damage dealt.\nAt the beginning of each planning phase, one of these buffs is increased to 33%"],
+    [ITEMS.Hextech_Gunblade, "The holder's magic and true damage from Abilities heal them for 33% of the damage dealt. The holder also heals their lowest health ally for the same amount."],
+    [ITEMS.IE, "The holder gains 75% Critical Strike Chance and 10% Critical Strike Damage. Each point of Critical Strike Chance above 100% becomes +1% Critical Strike Damage.\n[Unique - only 1 per champion]"],
+    [ITEMS.Ionic_Spark, "Enemies within 3 hexes have their Magic Resist reduced by 50%. When they cast an Ability, they are zapped taking magic damage equal to 200% of their max Mana"],
+    [ITEMS.Jeweled_Gauntlet, "The holder's magic and true damage from their Ability can critically strike. The holder gains 40% bonus Critical Strike Damage and 10 bonus Ability Power.\n[Unique - only 1 per champion]"],
+    [ITEMS.Last_Whisper, "When the holder inflicts a critical hit, the target's Armor is reduced by 70% for 5 seconds. This effect does not stack.\n[Unique - only one per champion]"],
+    [ITEMS.Locket, "When combat begins, the holder and all allies within 2 hexes in the same row gain a shield that blocks 300/350/400★ damage for 15 seconds"],
+    [ITEMS.Morello, "When the holder deals magic or true damage with their Ability, they burn the target, dealing 20% of the target's maximum Health as true damage over 10 seconds and reducing healing by 50% for the duration of the burn.\n[Unique - only 1 per champion]"],
+    [ITEMS.Negatron, "Negatron"],
+    [ITEMS.Quicksilver, "The holder gains 20% bonus Attack Speed. The holder is immune to crowd control in combat for 15 seconds.\n[Unique - only 1 per champion]"],
+    [ITEMS.Rabadons, "The holder gains 75 bonus Ability Power (including components)"],
+    [ITEMS.Rageblade, "Attacks grant +6% bonus Attack Speed for the rest of combat.\nThis effect can stack any number of times."],
+    [ITEMS.Rapid_Firecannon, "Increases the holder's Attack Range by 1 hex and grants 55% bonus Attack Speed (including components).\nThe holder's attacks can no longer miss"],
+    [ITEMS.Redemption, "Every 5 seconds, the holder radiates an aura to allies within 1 hex, healing them for 18% of their missing Health. Affected allies take 25% reduced damage from multi-target abilities and attacks for 5 seconds"],
+    [ITEMS.Rod, "Rod"],
+    [ITEMS.Runaans_Hurricane, "The holder gains 15 bonus Attack Damage. The holder's attacks fire a bolt at another nearby enemy, dealing 75% of the wearer's Attack Damage as physical damage"],
+    [ITEMS.Shroud_OF_Stillnes, "When combat begins, the holder shoots a beam straight ahead that delays affected enemies' first cast, increasing their max Mana by 35% until they cast.\n[Unique - only 1 per champion]"],
+    [ITEMS.Sparring_Gloves, "Sparring_Gloves"],
+    [ITEMS.Spatula, "Spatula"],
+    [ITEMS.Spear_Of_Shojin, "The holder's attacks restore 8 additional Mana"],
+    [ITEMS.Statikk, "The holder gains 10% bonus Attack Speed. Every third attack from the holder unleashes a chain lightning that bounces to 4 enemies, dealing 60 magic damage and reducing their Magic Resist by 50% for 5 seconds"],
+    [ITEMS.Sunfire, "Every 2 seconds, a random enemy within 2 hexes is burned for 16% of their maximum health as true damage over 8 seconds. Any healing they receive is reduced by 50%.\n[Unique - only 1 per champion]"],
+    [ITEMS.Tacticians, "Wearer's team gains +1 maximum team size"],
+    [ITEMS.Tear, "Tear"],
+    [ITEMS.Thiefs_Gloves, "At the beginning of each planning phase, the holder equips 2 temporary items. Temporary items increase in power based on your player level.\n[Consumes 3 item slots]"],
+    [ITEMS.Titans_Resolve, "When the holder attacks or takes damage, they gain 2 Attack Damage and Ability Power.\nThis stacks up to 25 times, at which point the holder gains 25 Armor and Magic Resist"],
+    [ITEMS.Warmogs, "Grants 1000 bonus Health (including components)"],
+    [ITEMS.Zekes_Herald, "When combat begins, the holder and all allies within 1 hexes in the same row gain +30% Attack Speed for the rest of combat"],
+    [ITEMS.Zephir, "When combat begins, the holder summons a whirlwind on the opposite side of the arena that removes the closest enemy from combat for 5 seconds.\n[Unique - only 1 per champion]"],
+    [ITEMS.ZZ_Rot_Portal, "At the start of combat, the holder taunts enemies within 4 hexes.\nWhen the holder dies, a Voidspawn arises taunting nearby enemies."],
+    [ITEMS.Edge_Of_Night, "When the holder first drops below 50% health, they briefly enter stealth, becoming untargetable and shedding negative effects. After coming out of stealth, the holder gains an additional 40% bonus Attack Speed"],
+
+]);
+
 let REVERSE_ITEM_DESCRIPTION = new Map([
     ["BF", ITEMS.BF],
     ["Bow", ITEMS.Bow],
@@ -395,9 +464,11 @@ const showItems = function () {
     cleanResultItems.forEach(itemList => {
         itemList.forEach(item => {
             let description = ITEM_DESCRIPTION.get(item);
+            let description_full = ITEM_DESCRIPTION_FULL.get(item);
             let img = document.createElement("img");
             img.src = "img/" + description + ".png"
             img.alt = description;
+            img.title = description + "\n" + description_full;
             img.id = "BF";
 
             combinedItems.appendChild(img);
