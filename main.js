@@ -1,5 +1,5 @@
 const ITEMS = {
-    "Arcangel": 0,
+    "Archangel": 0,
     "Banshees_Claw": 1,
     "BF": 2,
     "Blue_Buff": 3,
@@ -8,7 +8,7 @@ const ITEMS = {
     "BT": 6,
     "Chain_West": 7,
     "Chalice": 8,
-    "Challanger_Emblem": 9,
+    "Emblem_Challanger": 9,
     "Deathblade": 10,
     "Dragons_Claw": 11,
     "Emblem_Arcanist": 12,
@@ -61,7 +61,7 @@ const ITEMS = {
     "Titans_Resolve": 59,
     "Warmogs": 60,
     "Zekes_Herald": 61,
-    "Zephir": 62,
+    "Zephyr": 62,
     "ZZ_Rot_Portal": 63,
     "Edge_Of_Night": 64
 
@@ -88,7 +88,7 @@ let recipeBow = new Map([
     [ITEMS.Chain_West, ITEMS.Titans_Resolve],
     [ITEMS.Negatron, ITEMS.Runaans_Hurricane],
     [ITEMS.Giants_Belt, ITEMS.ZZ_Rot_Portal],
-    [ITEMS.Spatula, ITEMS.Challanger_Emblem],
+    [ITEMS.Spatula, ITEMS.Emblem_Challanger],
     [ITEMS.Sparring_Gloves, ITEMS.Last_Whisper],
 ]);
 
@@ -96,7 +96,7 @@ let recipeRod = new Map([
     [ITEMS.BF, ITEMS.Hextech_Gunblade],
     [ITEMS.Bow, ITEMS.Rageblade],
     [ITEMS.Rod, ITEMS.Rabadons],
-    [ITEMS.Tear, ITEMS.Arcangel],
+    [ITEMS.Tear, ITEMS.Archangel],
     [ITEMS.Chain_West, ITEMS.Locket],
     [ITEMS.Negatron, ITEMS.Ionic_Spark],
     [ITEMS.Giants_Belt, ITEMS.Morello],
@@ -107,7 +107,7 @@ let recipeRod = new Map([
 let recipeTear = new Map([
     [ITEMS.BF, ITEMS.Spear_Of_Shojin],
     [ITEMS.Bow, ITEMS.Statikk],
-    [ITEMS.Rod, ITEMS.Arcangel],
+    [ITEMS.Rod, ITEMS.Archangel],
     [ITEMS.Tear, ITEMS.Blue_Buff],
     [ITEMS.Chain_West, ITEMS.Frozen_Heart],
     [ITEMS.Negatron, ITEMS.Chalice],
@@ -136,7 +136,7 @@ let recipeNegatron = new Map([
     [ITEMS.Tear, ITEMS.Chalice],
     [ITEMS.Chain_West, ITEMS.Gargoyle_Stoneplate],
     [ITEMS.Negatron, ITEMS.Dragons_Claw],
-    [ITEMS.Giants_Belt, ITEMS.Zephir],
+    [ITEMS.Giants_Belt, ITEMS.Zephyr],
     [ITEMS.Spatula, ITEMS.Emblem_Mutant],
     [ITEMS.Sparring_Gloves, ITEMS.Quicksilver],
 ]);
@@ -147,7 +147,7 @@ let recipeGiantsBelt = new Map([
     [ITEMS.Rod, ITEMS.Morello],
     [ITEMS.Tear, ITEMS.Redemption],
     [ITEMS.Chain_West, ITEMS.Sunfire],
-    [ITEMS.Negatron, ITEMS.Zephir],
+    [ITEMS.Negatron, ITEMS.Zephyr],
     [ITEMS.Giants_Belt, ITEMS.Warmogs],
     [ITEMS.Spatula, ITEMS.Emblem_Chemtech],
     [ITEMS.Sparring_Gloves, ITEMS.Banshees_Claw],
@@ -155,7 +155,7 @@ let recipeGiantsBelt = new Map([
 
 let recipeSpatula = new Map([
     [ITEMS.BF, ITEMS.Emblem_Striker],
-    [ITEMS.Bow, ITEMS.Challanger_Emblem],
+    [ITEMS.Bow, ITEMS.Emblem_Challanger],
     [ITEMS.Rod, ITEMS.Emblem_Arcanist],
     [ITEMS.Tear, ITEMS.Emblem_Hextech],
     [ITEMS.Chain_West, ITEMS.Knight],
@@ -191,7 +191,7 @@ let recipeAll = new Map([
 ]);
 
 let ITEM_DESCRIPTION = new Map([
-    [ITEMS.Arcangel, "Arcangel"],
+    [ITEMS.Archangel, "Archangel"],
     [ITEMS.Banshees_Claw, "Banshees_Claw"],
     [ITEMS.BF, "BF"],
     [ITEMS.Blue_Buff, "Blue_Buff"],
@@ -200,12 +200,12 @@ let ITEM_DESCRIPTION = new Map([
     [ITEMS.BT, "BT"],
     [ITEMS.Chain_West, "Chain_West"],
     [ITEMS.Chalice, "Chalice"],
-    [ITEMS.Challanger_Emblem, "Challanger_Emblem"],
     [ITEMS.Deathblade, "Deathblade"],
     [ITEMS.Dragons_Claw, "Dragons_Claw"],
     [ITEMS.Emblem_Arcanist, "Emblem_Arcanist"],
     [ITEMS.Emblem_Assassin, "Emblem_Assassin"],
     [ITEMS.Emblem_Bruiser, "Emblem_Bruiser"],
+    [ITEMS.Emblem_Challanger, "Emblem_Challanger"],
     [ITEMS.Emblem_Chemtech, "Emblem_Chemtech"],
     [ITEMS.Emblem_Clockwork, "Emblem_Clockwork"],
     [ITEMS.Emblem_Debonair, "Emblem_Debonair"],
@@ -253,14 +253,14 @@ let ITEM_DESCRIPTION = new Map([
     [ITEMS.Titans_Resolve, "Titans_Resolve"],
     [ITEMS.Warmogs, "Warmogs"],
     [ITEMS.Zekes_Herald, "Zekes_Herald"],
-    [ITEMS.Zephir, "Zephir"],
+    [ITEMS.Zephyr, "Zephyr"],
     [ITEMS.ZZ_Rot_Portal, "ZZ_Rot_Portal"],
     [ITEMS.Edge_Of_Night, "Edge_Of_Night"],
 
 ]);
 
 let ITEM_DESCRIPTION_FULL = new Map([
-    [ITEMS.Arcangel, "During combat, the holder gains 25 Ability Power every 5 seconds"],
+    [ITEMS.Archangel, "During combat, the holder gains 25 Ability Power every 5 seconds"],
     [ITEMS.Banshees_Claw, "When combat begins, the holder and all allies within 1 hex in the same row gain a shield that blocks the damage and effects of the first enemy Ability, up to 600 damage"],
     [ITEMS.BF, "BF"],
     [ITEMS.Blue_Buff, "The holder gains 50 Mana (including components). After casting their Ability, the holder gains 20 mana.\n[Unique - only 1 per champion]"],
@@ -269,12 +269,12 @@ let ITEM_DESCRIPTION_FULL = new Map([
     [ITEMS.BT, "Physical damage heals the holder for 33% of the damage dealt.\nUpon falling below 40% Health, the holder gains a 30% max Health shield that lasts up to 5 seconds."],
     [ITEMS.Chain_West, "Chain_West"],
     [ITEMS.Chalice, "When combat begins, the holder and all allies within 1 hex in the same row gain 30 Ability Power for the rest of combat"],
-    [ITEMS.Challanger_Emblem, "The holder gains the Challanger trait.\n[Unique - Only One Per Champion]"],
     [ITEMS.Deathblade, "The holder gains 50/75/100★ bonus Attack Damage (including components)."],
     [ITEMS.Dragons_Claw, "Grants 200 bonus Magic Resist (including components). On being hit by magic or true damage from an Ability, launch a fireball at the Ability's caster that deals magic damage equal to 18% of their max Health (0.5 second cooldown)"],
     [ITEMS.Emblem_Arcanist, "The holder gains the Arcanist trait.\n[Unique - Only One Per Champion]"],
     [ITEMS.Emblem_Assassin, "The holder gains the Assassin trait.\n[Unique - Only One Per Champion]"],
     [ITEMS.Emblem_Bruiser, "The holder gains the Bruiser trait.\n[Unique - Only One Per Champion]"],
+    [ITEMS.Emblem_Challanger, "The holder gains the Challanger trait.\n[Unique - Only One Per Champion]"],
     [ITEMS.Emblem_Chemtech, "The holder gains the Chemtech trait.\n[Unique - Only One Per Champion]"],
     [ITEMS.Emblem_Clockwork, "The holder gains the Clockwork trait.\n[Unique - Only One Per Champion]"],
     [ITEMS.Emblem_Debonair, "The holder gains the Debonair trait.\n[Unique - Only One Per Champion]"],
@@ -322,7 +322,7 @@ let ITEM_DESCRIPTION_FULL = new Map([
     [ITEMS.Titans_Resolve, "When the holder attacks or takes damage, they gain 2 Attack Damage and Ability Power.\nThis stacks up to 25 times, at which point the holder gains 25 Armor and Magic Resist"],
     [ITEMS.Warmogs, "Grants 1000 bonus Health (including components)"],
     [ITEMS.Zekes_Herald, "When combat begins, the holder and all allies within 1 hexes in the same row gain +30% Attack Speed for the rest of combat"],
-    [ITEMS.Zephir, "When combat begins, the holder summons a whirlwind on the opposite side of the arena that removes the closest enemy from combat for 5 seconds.\n[Unique - only 1 per champion]"],
+    [ITEMS.Zephyr, "When combat begins, the holder summons a whirlwind on the opposite side of the arena that removes the closest enemy from combat for 5 seconds.\n[Unique - only 1 per champion]"],
     [ITEMS.ZZ_Rot_Portal, "At the start of combat, the holder taunts enemies within 4 hexes.\nWhen the holder dies, a Voidspawn arises taunting nearby enemies."],
     [ITEMS.Edge_Of_Night, "When the holder first drops below 50% health, they briefly enter stealth, becoming untargetable and shedding negative effects. After coming out of stealth, the holder gains an additional 40% bonus Attack Speed"],
 
